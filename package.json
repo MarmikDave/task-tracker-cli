@@ -1,0 +1,21 @@
+{
+  "name": "task-tracker-cli",
+  "version": "1.0.0",
+  "description": "A simple command line task tracker",
+  "main": "dist/task-cli.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/task-cli.js"
+  },
+  "keywords": [
+    "task",
+    "cli",
+    "tracker"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}

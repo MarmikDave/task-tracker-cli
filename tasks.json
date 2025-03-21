@@ -1,0 +1,12 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "description": "First",
+      "status": "todo",
+      "createdAt": "2025-03-21T06:31:48.335Z",
+      "updatedAt": "2025-03-21T06:31:48.335Z"
+    }
+  ],
+  "lastId": 1
+}
