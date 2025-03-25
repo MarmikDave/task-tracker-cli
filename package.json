@@ -2,20 +2,39 @@
   "name": "task-tracker-cli",
   "version": "1.0.0",
   "description": "A simple command line task tracker",
-  "main": "dist/task-cli.js",
+  "main": "dist/index.js",
+  "bin": {
+    "task-tracker-cli": "./dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
-    "start": "node dist/task-cli.js"
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "jest"
   },
   "keywords": [
     "task",
     "cli",
-    "tracker"
+    "tracker",
+    "todo"
   ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^22.13.10",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.12",
+    "@typescript-eslint/eslint-plugin": "^8.27.0",
+    "@typescript-eslint/parser": "^8.27.0",
+    "eslint": "^9.23.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^13.1.0",
+    "winston": "^3.17.0"
   }
 }
